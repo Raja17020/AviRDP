@@ -6,13 +6,13 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 360
+    timeout-minutes: 9999
 
     steps:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Raja17020/AviRDP/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Raja17020/AviRDP/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Raja17020/AviRDP/master/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Raja17020/AviRDP/master/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Raja17020/AviRDP/master/loop.bat -OutFile loop.bat
